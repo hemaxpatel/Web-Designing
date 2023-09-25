@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Group Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Study Group Finder</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Study Groups</a></li>
+        <li><a href="#">Create Study Group</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <h2>Find Your Perfect Study Group</h2>
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter a subject or keyword">
+        <select id="locationSelect">
+          <option value="">All Locations</option>
+          <option value="campus">Campus</option>
+          <option value="online">Online</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    
+    <section class="featured-groups">
+      <h3>Featured Study Groups</h3>
+      <div id="groupContainer">
+        <!-- Group cards will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Study Group Finder. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
